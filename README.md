@@ -79,5 +79,20 @@ To get the total price per investment:
 
 
 
+Running Test cases using command line:
+1. Navigate to your project directory: Open your terminal or command prompt and navigate to the root directory of your project where the pom.xml file is located.
+            -cd /path/to/your/project
+2. Run the JUnit tests using Maven: To run all the tests in your project, use the following command:
+            -mvn test
+3. Run a specific test class: If you want to run a specific test class, use this command:
+            -mvn -Dtest=ClassName test
+            Ex: mvn -Dtest=OrderControllerTest test
+
+4. Run a specific test method: To run a specific test method within a class:
+           -mvn -Dtest=ClassName#methodName test
+           Ex: mvn -Dtest=OrderControllerTest#getTotalInvested test
+
+
+
 
 
