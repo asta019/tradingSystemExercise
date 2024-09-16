@@ -4,6 +4,7 @@ import com.exercise.trading_system.dao.OrderTotalPrice;
 import com.exercise.trading_system.model.OrderStock;
 import com.exercise.trading_system.service.OrderService;
 import com.exercise.trading_system.service.OrderServiceImpl;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class OrderController {
     private OrderService orderService;
 
     @PostMapping("create")
-    public ResponseEntity<OrderStock> createOrder(@RequestBody OrderStock orderStock){
+    public ResponseEntity<OrderStock> createOrder(@Valid @RequestBody OrderStock orderStock){
         orderService.addOrder(orderStock);
        return new ResponseEntity<>(orderStock, HttpStatus.OK);
     }
