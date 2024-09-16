@@ -1,3 +1,15 @@
+Requirement:
+Build a simple trading system as a pure REST API with the endpoints given below. We want the
+users to be able to place orders to buy and sell stocks and track the overall value of their
+investments. Stocks will have an id, name, and price.
+For this example, there is no need to have the user authenticated (but if you can, that would be
+better). You can assume that there is only one account/user calling the API.
+● Create an endpoint to let the user place orders. Each order should have the stock,
+quantity, and price. Each order the user places should be recorded.
+● Create an endpoint to retrieve the total value invested in the user’s portfolio. Plus points
+if the user can retrieve data on an individual stock.
+
+
 There are two ways on how to execute these projects:
 
 A. Using an Editor(Intellij)
